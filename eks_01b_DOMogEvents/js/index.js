@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		if (numCount > minCount) {
 			numCount--;
 			updatenumCount();
+
 		}
 	});
 
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		if (numCount < maxCount) {
 			numCount++;
 			updatenumCount();
+
 		}
 	});
 
