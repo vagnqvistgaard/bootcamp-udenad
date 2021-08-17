@@ -14,12 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.querySelector('#btn-count-decrease').addEventListener('click', () => {
 		if (numCount > 0) {
 			numCount--;
+			updatenumCount();
 		}
 	});
 
 	document.querySelector('#btn-count-increase').addEventListener('click', () => {
 		if (numCount < 10) {
 			numCount++;
+			updatenumCount();
 		}
 	});
 
