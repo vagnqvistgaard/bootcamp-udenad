@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	function checkMinMax(t) {
-		if (t.innerHTML == '-') {
+		if (t.firstChild.data == '-') {
 			if (numCount != minCount) {
 				numCount--;
 			}
 		}
-		if (t.innerHTML == '+') {
+		if (t.firstChild.data == '+') {
 			if (numCount != maxCount) {
 				numCount++;
 			}
