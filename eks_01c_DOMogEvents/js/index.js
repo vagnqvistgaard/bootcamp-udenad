@@ -1,14 +1,15 @@
+// @ts-nocheck
 // "DOMContentLoaded" event'en sørger for, at Javascriptet først kører når hele HTML dokumentet er indlæst
 document.addEventListener("DOMContentLoaded", () => {
 
-	let medianNum = document.querySelector('#text-count');
+	let displayNum = document.querySelector('#text-count');
 
 	let numCount = 5;
 	let minCount = 0;
 	let maxCount = 10;
 
 	function updatenumCount() {
-		medianNum.innerHTML = parseInt(numCount);
+		displayNum.innerHTML = numCount.toString();
 	}
 
 	function checkMinMax(t) {
