@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	let name = 'Somebody';
 	let arr = ['ronda', 'harris'];
 
-	var hilsen = bigGreeting(arr[0]);
+	var hilsen = bigGreeting(arr[1]);
 	console.log(hilsen);
 
 
