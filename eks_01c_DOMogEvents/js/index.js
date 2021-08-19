@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
 		displayNum.innerHTML = numCount.toString();
 	}
 
-	function checkMinMax(t) {
-		if (t.firstChild.data == '-') {
+	function checkMinMax(t) { //istf. firstChild.data: Lav dit eget dataset...!" > Christian
+		if (t.firstChild.data == '-') { //solvable i one line w. logic && !!!!
 			if (numCount != minCount) {
 				numCount--;
 			}
 		}
-		if (t.firstChild.data == '+') {
+		if (t.firstChild.data == '+') { //solvable in one line w. logic && !!!!
 			if (numCount != maxCount) {
 				numCount++;
 			}
@@ -33,7 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	document.querySelector('#btn-count-increase').addEventListener('click', (e) => {
+		console.log(e.target);
 		checkMinMax(e.target);
 	});
 
 });// Afslutter: DOMContentLoaded
+
+/* også løst med at tjekke 'direction' sendt fra listeners:
+	checkMinMax('increase')/ checkMinMax('decrease');
+
+	if(direction === 'inc' && numCount != minCount , for eksempel..
+	Kendt som 'Olivers Løsning´   */
