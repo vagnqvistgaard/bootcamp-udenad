@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	let names = ['eeny', 'meeny', 'miney', 'moe'];
 
 	for (i = 0; i < names.length; i++) {
-		var el = document.createElement("LI");
+		var el = document.createElement("li");
 		el.textContent = names[i];
 		document.querySelector('#liste').appendChild(el);
 	}
